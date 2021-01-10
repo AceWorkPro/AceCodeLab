@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/APageFragment">
+
+    <fragment
+        android:id="@+id/APageFragment"
+        android:name="com.ace.lab.navigation.APageFragment"
+        android:label="fragment_a_page"
+        tools:layout="@layout/fragment_a_page" >
+        <action
+            android:id="@+id/action_AFragment_to_BFragment"
+            app:destination="@id/BPageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BPageFragment"
+        android:name="com.ace.lab.navigation.BPageFragment"
+        android:label="fragment_b_page"
+        tools:layout="@layout/fragment_b_page" >
+        <action
+            android:id="@+id/action_BFragment_to_CFragment"
+            app:destination="@id/CPageFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CPageFragment"
+        android:name="com.ace.lab.navigation.CPageFragment"
+        android:label="fragment_c_page"
+        tools:layout="@layout/fragment_c_page" >
+    </fragment>
+
+</navigation>
